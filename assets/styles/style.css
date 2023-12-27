@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins";
+  margin: 0;
+  padding: 0;
+  /* background-image: url(../image/14213463_5430659.jpg); */
+}
+.print-area {
+  width: 70%;
+  margin: 20px auto;
+  box-shadow: 5px 4px 8px 5px rgba(0, 0, 0, 0.2);
+}
+p {
+  text-align: justify;
+}
+footer p {
+  text-align: center;
+}
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #c70039;
+  font-weight: bold;
+  text-align: center;
+}
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+}
+nav a:hover {
+  font-weight: bold;
+}
+.profile header {
+  text-align: center;
+}
+.featured-image {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+#abstrak img {
+  width: 100%;
+}
+.overlay-text {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin-bottom: 0px;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  font-size: 70px;
+  width: 100%;
+}
+.title {
+  font-size: 20px;
+  padding: 10px;
+  background-color: #c70039;
+  text-align: center;
+  color: white;
+}
+nav li {
+  list-style-type: none;
+}
+nav ul {
+  padding-inline: 4rem;
+  display: flex;
+  gap: 2rem;
+}
+nav {
+  background-color: #900c3f;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+  margin-top: 0px;
+}
+main {
+  padding: 20px;
+  display: flex;
+  gap: 1.5rem;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#abstrak h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #b31312;
+}
+#content {
+  flex: 5;
+  display: flex;
+  flex-flow: column nowrap;
+}
+aside {
+  flex: 1;
+}
+header {
+  display: inline;
+}
+.about-me {
+  width: 250px;
+}
+.profil {
+  font-size: 1.7rem;
+  color: #b31312;
+}
+#nissan h2 {
+  color: #b31312;
+  font-size: 1.5rem;
+}
+#toyota h2 {
+  color: #b31312;
+  font-size: 2rem;
+}
+#mazda h2 {
+  color: #b31312;
+  font-size: 10px;
+}
+#honda h2 {
+  color: #b31312;
+  font-size: 1.5rem;
+}
+#mitsubishi h2 {
+  color: #b31312;
+  font-size: 1.5rem;
+}
+/* Perangkat dengan lebar layar 1200px dan di bawahnya */
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+  main aside {
+    align-self: center;
+  }
+}
+/* Perangkat dengan lebar layar 768px dan di bawahnya */
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+
+  main aside {
+    align-self: stretch;
+  }
+}
